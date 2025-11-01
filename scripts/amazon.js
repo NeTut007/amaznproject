@@ -1,5 +1,6 @@
 // список вещей берется из другого файла тк он загружен в html файле
 import {cart} from "../data/cart.js"; // это ИМПОРТЫ КАК В PYTHON ЧООООООООООООООООООООООООООООООООООООООООООООООООООООООООООООО
+import {products} from "../data/products.js";
 
 let productsHTML = '';
 
