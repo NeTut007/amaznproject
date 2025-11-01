@@ -1,5 +1,8 @@
 // список вещей берется из другого файла тк он загружен в html файле
+import {cart} from "../data/cart.js"; // это ИМПОРТЫ КАК В PYTHON ЧООООООООООООООООООООООООООООООООООООООООООООООООООООООООООООО
+
 let productsHTML = '';
+
 
 products.forEach( (product) => {
     productsHTML += `
@@ -90,5 +93,5 @@ document.querySelectorAll('.js-add-to-cart')
         document.querySelector('.js-cart-quantity')
             .innerHTML = cartQuantity;
     });
-})
+});
 
