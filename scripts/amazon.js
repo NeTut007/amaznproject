@@ -1,6 +1,7 @@
 // список вещей берется из другого файла тк он загружен в html файле
 import {cart, addToCart} from "../data/cart.js"; // это ИМПОРТЫ КАК В PYTHON ЧООООООООООООООООООООООООООООООООООООООООООООООООООООООООООООО
 import {products} from "../data/products.js";
+import { formatCurrency } from "./utils/money.js";
 
 let productsHTML = '';
 
@@ -26,7 +27,7 @@ products.forEach( (product) => {
         </div>
 
         <div class="product-price">
-            $${(product.priceCents / 100).toFixed(2)}  <!--две цифры после запятой-->
+            $${formatCurrency(product.priceCents)}
         </div>
 
         <div class="product-quantity-container">
